@@ -1,0 +1,881 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../responsabilidades/">
+      
+      
+        <link rel="next" href="../help-desk/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../img/favicon-circles.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Admin Circles - Manual de Soporte — Circles Learning</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plataforma-admin-circles" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Manual de Soporte — Circles Learning" class="md-header__button md-logo" aria-label="Manual de Soporte — Circles Learning" data-md-component="logo">
+      
+  <img src="../img/logo-circles.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manual de Soporte — Circles Learning
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Admin Circles
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Manual de Soporte — Circles Learning" class="md-nav__button md-logo" aria-label="Manual de Soporte — Circles Learning" data-md-component="logo">
+      
+  <img src="../img/logo-circles.png" alt="logo">
+
+    </a>
+    Manual de Soporte — Circles Learning
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../herramientas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responsabilidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Responsabilidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Circles
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Circles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mensajes-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mensajes (Messages)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cursos-courses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cursos (Courses)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cursos (Courses)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#people-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        People Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messages Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-circulo-desde-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un círculo desde Admin
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear un círculo desde Admin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuando-crear-un-circulo-desde-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuándo crear un círculo desde Admin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pasos-para-crear-un-circulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos para crear un círculo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subir-entregas-manualmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subir entregas manualmente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subir entregas manualmente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuando-subir-una-entrega-manualmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuándo subir una entrega manualmente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subir-entrega-por-un-circulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subir entrega por un círculo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subir-entrega-por-un-usuario-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subir entrega por un usuario individual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help-desk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help Desk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registro-datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problemas-y-faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas y FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plantillas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantillas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coordinadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Para coordinadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tiempos de respuesta (SLAs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../escalamiento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escalamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="plataforma-admin-circles">Plataforma Admin Circles<a class="headerlink" href="#plataforma-admin-circles" title="Permanent link">&para;</a></h1>
+<p><strong>Link:</strong> https://admin.getcircles.org/auth</p>
+<h2 id="mensajes-messages">Mensajes (Messages)<a class="headerlink" href="#mensajes-messages" title="Permanent link">&para;</a></h2>
+<p>La pestaña de Mensajes muestra todos los chats en los que has participado. Los docentes no pueden iniciar el chat contigo; debes entrar tú e iniciar la conversación. Es la primera opción de comunicación, aunque si el usuario no ve los mensajes, se recomienda usar otro canal (WhatsApp o correo).</p>
+<p>Al entrar a un chat, se notifica a todos los participantes. Bajo el nombre del usuario se muestra la última actividad (minutos, horas, días o meses). También se puede ver la foto de perfil, nombre, curso e institución del docente.</p>
+<p>Funciones disponibles en el chat: envío de archivos, encuestas, emojis, mensajes de texto y audio. También hay un ícono de llamada, útil para comunicación más detallada o con usuarios mayores.</p>
+<h2 id="cursos-courses">Cursos (Courses)<a class="headerlink" href="#cursos-courses" title="Permanent link">&para;</a></h2>
+<p>Al entrar a un curso, se presentan tres pestañas: People, Progress y Messages. Cada una tiene funciones específicas que se detallan a continuación.</p>
+<h3 id="people-tab">People Tab<a class="headerlink" href="#people-tab" title="Permanent link">&para;</a></h3>
+<p>Funciona como una base de datos de los docentes del curso. Muestra: nombre, rol, correo, teléfono, última actividad, estado del certificado, institución y TAG. Incluye un buscador por nombre o correo.</p>
+<p><strong>Agregar un usuario:</strong> Botón "Add people" &gt; marcar siempre como "Student" &gt; ingresar correo &gt; "Invite".</p>
+<p><strong>Remover un usuario:</strong> Pasar el mouse sobre la imagen del docente para ver el menú con las opciones: Profile, Message y Remove from course.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Al remover a alguien, siempre hay que consultar y registrar la razón de la baja. Esto ayuda a identificar patrones.</p>
+</div>
+<h3 id="progress-tab">Progress Tab<a class="headerlink" href="#progress-tab" title="Permanent link">&para;</a></h3>
+<p>La pestaña más utilizada. Permite monitorear el avance del curso, los participantes y los círculos. Incluye filtros, buscador por nombre, y el botón "Not in a Circle" para ver personas sin grupo.</p>
+<p><strong>Módulos:</strong> Se visualizan en una barra horizontal. Cada módulo muestra el rating del exit ticket (satisfacción de los docentes) y al hacer clic se despliegan los contenidos: objetivos, actividades, entregable, cierre y contenido adicional.</p>
+<p><strong>Círculos:</strong> Se muestra el día y hora de la reunión, si es semanal, y quién es el Host (encargado de subir actividades y programar reuniones). Al hacer clic en el ícono se ve: estado, creador, descripción, idioma, reuniones, miembros y asistente a cargo.</p>
+<p><strong>Progreso/Actividades:</strong> Las entregas pueden ser grupales (las sube el Host) o individuales (cada participante). Si no se envía a tiempo, aparece "Pending". Una actividad enviada se marca con un ícono amarillo.</p>
+<h3 id="messages-tab">Messages Tab<a class="headerlink" href="#messages-tab" title="Permanent link">&para;</a></h3>
+<p>Pestaña de mensajes dentro del contexto del curso. Se actualiza automáticamente al unirse a conversaciones desde People o desde la pestaña general de Messages.</p>
+<h2 id="crear-un-circulo-desde-admin">Crear un círculo desde Admin<a class="headerlink" href="#crear-un-circulo-desde-admin" title="Permanent link">&para;</a></h2>
+<p>En algunos casos, un usuario necesita apoyo externo para formar un círculo — por ejemplo, si no logra integrarse durante el periodo de Match, si su círculo se disolvió, o si se incorpora tarde al curso. En estas situaciones, el equipo de soporte puede crear un círculo directamente desde la plataforma Admin.</p>
+<h3 id="cuando-crear-un-circulo-desde-admin">Cuándo crear un círculo desde Admin<a class="headerlink" href="#cuando-crear-un-circulo-desde-admin" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El usuario no pudo hacer Match por su cuenta y ya se agotó el periodo de formación libre.</li>
+<li>Un círculo perdió miembros y es necesario rearmar uno nuevo.</li>
+<li>Coordinación solicita la creación de un círculo para reubicar usuarios.</li>
+</ul>
+<h3 id="pasos-para-crear-un-circulo">Pasos para crear un círculo<a class="headerlink" href="#pasos-para-crear-un-circulo" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Dentro del curso en Admin, ir a la pestaña <strong>Progress</strong>.</li>
+<li>Seleccionar el botón <strong>"Not in a Circle"</strong> (arriba a la derecha). Se desplegará la lista de todas las personas que aún no tienen círculo.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>La opción de crear círculo solo está disponible para usuarios que ya ingresaron a la plataforma (estado <strong>"New User"</strong>). No es posible crear un círculo para usuarios en estado "Prospect" (que aún no han ingresado).</p>
+</div>
+<ol>
+<li>Posicionar el mouse sobre la foto de perfil del usuario que será anfitrión/a. Aparecerán cuatro opciones.</li>
+<li>Seleccionar la segunda opción: <strong>"Make Circle Host"</strong>. Esto creará un círculo nuevo con esa persona como anfitrión/a.</li>
+<li>Completar los campos del nuevo círculo:<ul>
+<li><strong>Circle Language:</strong> idioma del círculo.</li>
+<li><strong>Is this circle open for anyone to apply:</strong> si el círculo estará abierto a postulaciones.</li>
+<li><strong>Application status:</strong> estado de las postulaciones.</li>
+<li><strong>Mensaje de bienvenida:</strong> texto que verán los miembros al unirse.</li>
+<li><strong>Imagen del círculo:</strong> foto o imagen representativa.</li>
+</ul>
+</li>
+<li><strong>(Opcional) Agregar miembros de inmediato:</strong> se desplegará una lista con todos los integrantes del curso que sean "New Users" para agregarlos directamente al crear el círculo.</li>
+<li>Seleccionar el botón <strong>"Create Circle"</strong> al final para confirmar la creación.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La creación de círculos desde Admin es una acción de soporte. Siempre debe estar respaldada por una solicitud de Coordinación o por una situación documentada que lo justifique.</p>
+</div>
+<p><img alt="Crear círculo desde Admin" src="../img/create-circle-from-admin.png" /></p>
+<h2 id="subir-entregas-manualmente">Subir entregas manualmente<a class="headerlink" href="#subir-entregas-manualmente" title="Permanent link">&para;</a></h2>
+<p>Cuando un círculo o un usuario individual no puede subir una entrega por la vía habitual (problemas técnicos, acceso limitado, etc.), el equipo de soporte puede cargar la entrega de forma manual desde la plataforma Admin.</p>
+<h3 id="cuando-subir-una-entrega-manualmente">Cuándo subir una entrega manualmente<a class="headerlink" href="#cuando-subir-una-entrega-manualmente" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El usuario reporta un error técnico que le impide subir la entrega.</li>
+<li>El Host de un círculo no está disponible y el grupo necesita que se registre una entrega grupal.</li>
+<li>Coordinación solicita la carga manual de una entrega como excepción.</li>
+</ul>
+<h3 id="subir-entrega-por-un-circulo">Subir entrega por un círculo<a class="headerlink" href="#subir-entrega-por-un-circulo" title="Permanent link">&para;</a></h3>
+<!-- TODO: Completar con los pasos específicos para entrega grupal -->
+
+<h3 id="subir-entrega-por-un-usuario-individual">Subir entrega por un usuario individual<a class="headerlink" href="#subir-entrega-por-un-usuario-individual" title="Permanent link">&para;</a></h3>
+<!-- TODO: Completar con los pasos específicos para entrega individual -->
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Toda entrega subida manualmente debe quedar documentada (quién la subió, por qué motivo y cuándo) para mantener la trazabilidad del proceso.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
