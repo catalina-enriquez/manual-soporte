@@ -3,6 +3,7 @@ site_name: Manual de Soporte — Circles Learning
 nav:
   - Inicio: index.md
   - Herramientas: herramientas.md
+  - Correo de soporte: correo-soporte.md
   - Responsabilidades: responsabilidades.md
   - Admin Circles: admin-circles.md
   - Help Desk: help-desk.md

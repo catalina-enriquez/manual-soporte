@@ -12,6 +12,10 @@ A continuación se presentan los mensajes estandarizados organizados por canal. 
 
 > *Hola a tod@s! Esperando que [estén bien / estén contentos porque llegó el fin de semana], les comparto la grabación de la tutoría [de ayer] (también está disponible en la sección de actividades de la App para que puedan revisarla siempre que gusten): [link video]*
 
+### Cierre de conversación
+
+> *Si no tienes más consulta, marcaré la conversación como resuelta, pero siempre puedes volver a escribirnos por aquí o a soporte@getcircles.org 🤗*
+
 ## Correos electrónicos
 
 ### No funciona mi contraseña temporal

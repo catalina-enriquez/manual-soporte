@@ -1,6 +1,8 @@
 # Plataforma Admin Circles
 
-**Link:** https://admin.getcircles.org/auth
+**Link:** <a href="https://admin.getcircles.org" target="_blank">https://admin.getcircles.org</a>
+
+![Pantalla principal de Admin Circles](img/admin-homescreen.png)
 
 ## Mensajes (Messages)
 
