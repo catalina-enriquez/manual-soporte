@@ -1,19 +1,189 @@
 # Registro de datos
 
-La base de datos es una hoja de cálculo compartida que centraliza la información de todos los inscritos. Sus pestañas principales son:
+La base de datos es una hoja de cálculo compartida (Google Sheets) que centraliza la información de todos los inscritos de todas las convocatorias.
 
-## Consolidado
+## Estructura del consolidado
 
-Pestaña de información completa y actualizable con las columnas: Course ID, Nombre del curso, RUT, Correo inscrito, Teléfono, Sede y Cargo. Aquí se concentra la información resumida por docente.
+El archivo tiene dos tipos de pestañas:
+
+### Pestaña "Consolidado"
+
+Es la **pestaña principal**. Contiene una fila por cada inscrito de todas las convocatorias, con los siguientes campos:
+
+| Campo | Descripción | Ejemplo |
+|---|---|---|
+| **Curso** | Nombre del curso al que está inscrito | Clase Efectiva — Docentes |
+| **Nombre** | Nombre completo del inscrito | María José Pérez González |
+| **Género** | Género del inscrito | Femenino |
+| **RUT** | RUT con puntos y guión | 12.345.678-9 |
+| **Teléfono** | Número de contacto con código de país | +56 9 1234 5678 |
+| **Correo** | Correo electrónico de inscripción | maria.perez@sip.cl |
+| **Sede** | Sede o establecimiento del inscrito | Liceo Bicentenario |
+| **Cargo** | Cargo o rol dentro de la institución | Docente de Matemáticas |
 
 !!! note
-    Esta pestaña debe mantenerse actualizada. Siempre notifica a un coordinador cuando hagas modificaciones importantes (como eliminar filas). Usa Ctrl+F para buscar docentes, ya que algunos están en más de un curso.
+    Un mismo inscrito puede aparecer en **más de una fila** si está en más de un curso. Siempre usa Buscar (Ctrl+F) para verificar si alguien ya existe antes de agregar una fila.
 
-## Pestañas por curso
+### Pestañas por curso
 
 Cada curso tiene su propia pestaña de seguimiento con las columnas: Stage, Email, Name, Last Name, Host, Reunión, Módulos (1-4), Comentarios Asistente y Comentarios Coordinador.
 
 Los stages posibles son: "Meeting Scheduled" (en un grupo con reunión agendada), "Circle member" (en un grupo sin reunión agendada), "New user" (ingreso reciente) y "Prospect" (aún no entra a la plataforma).
+
+## Google Sheets básico
+
+Si no has usado mucho Google Sheets, estas son las funcionalidades que vas a necesitar para trabajar con el consolidado.
+
+### Inmovilizar filas
+
+La primera fila del consolidado tiene los encabezados de las columnas. Para que siempre estén visibles al hacer scroll:
+
+1. Ve a **Ver → Inmovilizar → 1 fila**
+
+Esto fija la fila de encabezados en la parte superior de la hoja, sin importar cuánto bajes.
+
+<!-- TODO: agregar pantallazo de Ver → Inmovilizar -->
+
+### Filtros
+
+Los filtros permiten ver solo las filas que cumplen cierta condición (ej: solo inscritos de un curso específico).
+
+1. Selecciona la fila de encabezados
+2. Ve a **Datos → Crear un filtro**
+3. Aparecerá un ícono de embudo (▼) en cada columna
+4. Haz clic en el ▼ de la columna que quieras filtrar
+5. Desmarca "Seleccionar todo" y marca solo los valores que quieras ver
+6. Haz clic en **Aceptar**
+
+Para quitar el filtro: **Datos → Quitar filtro**.
+
+<!-- TODO: agregar pantallazo de filtro aplicado -->
+
+!!! tip
+    Usa filtros para ver solo los inscritos de tu convocatoria. Filtra la columna "Curso" y selecciona solo los cursos que te corresponden.
+
+### Ordenar
+
+Para ordenar los datos por una columna (ej: ordenar por nombre alfabéticamente):
+
+1. Haz clic en cualquier celda de la columna que quieras ordenar
+2. Ve a **Datos → Ordenar hoja por columna [X], A→Z** (o Z→A para orden inverso)
+
+### Buscar y reemplazar
+
+- **Buscar:** Ctrl+F (o Cmd+F en Mac) — busca texto en toda la hoja
+- **Buscar y reemplazar:** Ctrl+H (o Cmd+H en Mac) — busca y reemplaza texto en toda la hoja o en un rango seleccionado
+
+<!-- TODO: agregar pantallazo de buscar y reemplazar -->
+
+### Relleno automático
+
+Si necesitas copiar una fórmula o un valor a muchas filas:
+
+1. Escribe el valor o fórmula en la primera celda
+2. Selecciona la celda
+3. Arrastra el **cuadrado azul** de la esquina inferior derecha hacia abajo (o hacia la dirección que necesites)
+
+Google Sheets copiará el contenido ajustando las referencias automáticamente.
+
+### Seleccionar rangos rápidamente
+
+- **Seleccionar toda una columna:** clic en la letra de la columna (ej: A, B, C)
+- **Seleccionar toda una fila:** clic en el número de la fila
+- **Seleccionar hasta el final de los datos:** selecciona una celda, luego Ctrl+Shift+Fin (o Cmd+Shift+Fin en Mac)
+
+## Fórmulas útiles
+
+Estas tres fórmulas te van a servir para limpiar y buscar datos en el consolidado.
+
+### NOMPROPIO — corregir mayúsculas en nombres
+
+Convierte un texto a formato de nombre propio (primera letra de cada palabra en mayúscula, el resto en minúscula).
+
+```
+=NOMPROPIO(A2)
+```
+
+| Antes | Después |
+|---|---|
+| MARÍA JOSÉ PÉREZ | María José Pérez |
+| juan carlos silva | Juan Carlos Silva |
+
+Útil cuando los datos vienen en mayúsculas desde formularios de inscripción.
+
+### ESPACIOS — eliminar espacios extra
+
+Elimina espacios dobles y espacios al inicio/final de un texto.
+
+```
+=ESPACIOS(A2)
+```
+
+| Antes | Después |
+|---|---|
+| "  María   Pérez  " | "María Pérez" |
+
+Útil para limpiar datos pegados desde otras fuentes.
+
+### BUSCARV — buscar datos entre pestañas
+
+Busca un valor en la primera columna de un rango y devuelve el valor de otra columna en la misma fila.
+
+```
+=BUSCARV(valor_buscado; rango; número_columna; FALSO)
+```
+
+Ejemplo: buscar el teléfono de un inscrito por su correo:
+
+```
+=BUSCARV("maria.perez@sip.cl"; Consolidado!C:F; 4; FALSO)
+```
+
+Esto busca `maria.perez@sip.cl` en la columna C del Consolidado y devuelve el valor de la columna F (4 columnas después).
+
+!!! warning
+    Recuerda que Google Sheets en español usa **punto y coma** (`;`) como separador de argumentos, no coma.
+
+## Copiar correos de reportes al consolidado
+
+Los reportes automáticos que llegan por correo (como el reporte de Match o el de usuarios en riesgo) incluyen listas de correos electrónicos separados por comas. Si necesitas hacer seguimiento de esos usuarios — por ejemplo, para ir marcando a quiénes ya contactaste — puedes copiar esos correos y pegarlos como una columna en Google Sheets.
+
+### Paso 1: Copiar los correos del reporte
+
+Abre el correo del reporte (Match, usuarios en riesgo, etc.) y selecciona la lista de correos. Copia con Ctrl+C (Cmd+C en Mac).
+
+![Lista de correos en el reporte de Match](img/Copiar-correos-reporte-match.png)
+
+### Paso 2: Pegar y dividir en columnas
+
+Abre el consolidado (o una hoja auxiliar) y pega los correos en una celda. Los correos quedarán todos juntos en una sola celda, separados por comas.
+
+Al pegar, aparecerá un pequeño ícono de pegado. Haz clic en él y selecciona **"Dividir texto en columnas"**. Google Sheets separará cada correo en su propia celda, distribuyéndolos a lo largo de la fila.
+
+![Opción "Dividir texto en columnas" después de pegar](img/GoogleSheets-dividir-texto-columnas.png)
+
+### Paso 3: Copiar la fila
+
+Ahora los correos están en una fila (horizontal). Selecciona la fila completa haciendo clic en el número de fila, luego clic derecho → **Copiar** (o Ctrl+C).
+
+![Seleccionar y copiar la fila con los correos separados](img/GoogleSheets-copiar-fila.png)
+
+### Paso 4: Pegado especial transpuesto
+
+Haz clic en la celda donde quieres que empiece la columna de correos. Luego haz clic derecho → **Pegado especial** → **Transpuesto**.
+
+Esto convierte la fila (horizontal) en una columna (vertical).
+
+![Clic derecho → Pegado especial → Transpuesto](img/GoogleSheets-pegado-especial-transpuesto.png)
+
+### Resultado
+
+Los correos quedan ordenados en una columna, uno por fila. Desde aquí puedes agregar columnas adicionales para hacer seguimiento (ej: "Contactado", "Fecha", "Notas").
+
+![Correos ordenados como columna después del pegado transpuesto](img/GoogleSheets-resultado-pegado-transpuesto.png)
+
+!!! tip
+    Puedes usar esta misma técnica con cualquier lista de correos separados por comas, no solo con los reportes automáticos.
 
 ## Bajas
 
@@ -57,7 +227,8 @@ Cuando un usuario solicita ser dado de baja del curso, el asistente debe seguir 
 2. **Preguntar el motivo:** Siempre preguntar al usuario por qué desea darse de baja. Registrar el motivo textual en el campo de "Motivo" en la pestaña de Bajas y en el Consolidado.
 3. **Clarificar motivos ambiguos:** Algunos motivos requieren mayor detalle para poder clasificarlos correctamente en los reportes. Ver la tabla a continuación.
 4. **Registrar si hizo Match:** Verificar en Admin si el usuario hizo Match (columna "Did User Match"). Este dato es obligatorio.
-5. **Ejecutar la baja:** Remover al usuario del curso en Admin (ver sección 3.2), cortar la fila del Consolidado y pegarla en la pestaña de Bajas con todos los campos completos.
+5. **Ejecutar la baja en Admin:** Remover al usuario del curso en Admin Circles (ver procedimiento en "Registro de bajas en Admin Circles" más abajo).
+6. **Ejecutar la baja en el Consolidado:** Mover la fila del usuario desde el Consolidado a la pestaña de Bajas (ver procedimiento detallado a continuación).
 
 **Motivos que requieren clarificación antes de registrar la baja:**
 
@@ -65,6 +236,47 @@ Cuando un usuario solicita ser dado de baja del curso, el asistente debe seguir 
 |---|---|---|
 | **"Incompatibilidad de horarios"** o **"problemas de horario"** | Preguntar y registrar explícitamente si se trata de: (a) incompatibilidad de horarios **entre los miembros del círculo** para coordinar reuniones, o (b) un cambio en el **horario laboral del usuario** que le impide seguir participando. | La causa (a) es responsabilidad de Circles y se contabiliza como baja en reportes. La causa (b) es externa y no se contabiliza. Registrar la clarificación en el campo "Motivo" del Consolidado y de la pestaña de Bajas. |
 | **"Mucho trabajo"** o **"no tengo tiempo"** | Preguntar si se refiere a carga laboral de su trabajo o a la carga del curso de Circles. | Aunque ambas se registran como baja, la distinción ayuda a identificar patrones en los reportes. |
+
+### Paso a paso: mover la fila del Consolidado a Bajas
+
+Una vez confirmada la intención del usuario, preguntado el motivo y verificado el Match, hay que mover su fila desde la pestaña principal del Consolidado a la pestaña de Bajas.
+
+<!-- TODO: agregar pantallazo del consolidado mostrando la fila a cortar -->
+
+1. **Buscar al usuario en el Consolidado:** Usa Ctrl+F (o Cmd+F en Mac) y busca por correo electrónico. Verifica que sea la fila correcta (nombre, curso).
+
+2. **Seleccionar la fila completa:** Haz clic en el número de fila a la izquierda para seleccionar toda la fila.
+
+    <!-- TODO: agregar pantallazo de fila seleccionada -->
+
+3. **Cortar la fila:** Haz clic derecho → **Cortar** (o Ctrl+X / Cmd+X). La fila quedará marcada con una línea punteada.
+
+4. **Ir a la pestaña de Bajas:** Haz clic en la pestaña "Bajas" en la parte inferior de la hoja de cálculo.
+
+    <!-- TODO: agregar pantallazo mostrando la pestaña Bajas -->
+
+5. **Ubicar la última fila con datos:** Baja hasta encontrar la primera fila vacía después de los datos existentes.
+
+6. **Pegar la fila:** Haz clic derecho en el número de la fila vacía → **Pegar** (o Ctrl+V / Cmd+V). Los datos del usuario aparecerán en la pestaña de Bajas.
+
+7. **Completar los campos adicionales de la pestaña de Bajas:**
+
+    | Campo | Qué registrar |
+    |---|---|
+    | **Motivo** | Motivo textual indicado por el usuario (o deducido, señalando que no fue explícito) |
+    | **Fecha de la baja** | Fecha en que se ejecutó la baja (formato DD/MM/AAAA) |
+    | **Quién lo dio de baja** | Tu nombre (el SA que ejecutó la baja) |
+    | **¿Hizo Match?** | Sí o No — verificar en Admin (columna "Did User Match") |
+
+    <!-- TODO: agregar pantallazo de la pestaña Bajas con los campos adicionales -->
+
+8. **Verificar:** Vuelve a la pestaña del Consolidado y confirma que la fila del usuario ya no está. Si la fila quedó vacía (en blanco), haz clic derecho → **Eliminar fila** para no dejar espacios.
+
+!!! warning "Importante"
+    No borres la fila del Consolidado sin antes pegarla en Bajas. Si la borras por error, usa Ctrl+Z (Cmd+Z) para deshacer. Los datos del usuario deben quedar en la pestaña de Bajas como registro histórico.
+
+!!! tip "Si el usuario está en más de un curso"
+    Un mismo usuario puede tener múltiples filas en el Consolidado si está inscrito en más de un curso. Asegúrate de mover solo la fila del curso del que se está dando de baja, no todas sus filas.
 
 **Criterios importantes para la decisión:**
 

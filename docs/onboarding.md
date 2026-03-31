@@ -44,8 +44,12 @@ Los filtros funcionan principalmente por **dominio de correo electrónico**. Por
 | `Curso-IA-PUC` | Curso IA para docentes UC | Dominio `@uc.cl` (excluyendo TeachView) |
 | `ChileMass` | ChileMass | Keywords en asunto (temporal) |
 | `SLEP-Tamarugal` | SLEP Tamarugal | Dominio `@sleptamarugal.gob.cl` + keywords |
+| `NO CONTESTAR` | — | Asignación manual |
 
 Para ver los correos de un proyecto específico, simplemente haz click en el label correspondiente en el panel izquierdo de Gmail.
+
+!!! warning "Label `NO CONTESTAR` (color negro)"
+    Esta etiqueta se asigna manualmente a correos que **no deben ser respondidos por asistentes de soporte**. Solo pueden responderlos superiores (encargada de operaciones, CEO, etc.). Si ves un correo con esta etiqueta, no lo respondas.
 
 ### Mantenimiento de filtros
 

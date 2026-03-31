@@ -23,6 +23,7 @@ docs/
 ├── index.md                 # Intro, tono, filosofía
 ├── herramientas.md          # Herramientas del equipo
 ├── responsabilidades.md     # Roles y tareas por etapa
+├── priorizacion.md          # Priorización de usuarios en riesgo por periodo
 ├── admin-circles.md         # Plataforma Admin completa
 ├── help-desk.md             # Tickets y chat de soporte
 ├── registro-datos.md        # Base de datos y bajas

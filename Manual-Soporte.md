@@ -54,6 +54,7 @@ El equipo de soporte utiliza las siguientes herramientas en su trabajo diario. F
 | **WhatsApp** | Comunicación directa con usuarios (individual y grupal) | Teléfono del equipo |
 | **Gmail** | Correos formales: credenciales, bajas, notificaciones | Cuenta del equipo |
 | **Base de Datos** | Registro y seguimiento de inscritos, bajas y avance | Hoja de cálculo compartida |
+| **Help Center** | Artículos con guías paso a paso de la plataforma Circles (con imágenes) | help.getcircles.org |
 | **Torpedo Soporte** | Fechas y links de tutorías | Documento compartido |
 
 > **TIP:** Ten abiertos en pestañas simultáneas: el Sistema de Tickets, el Chat de Soporte, la plataforma Admin y la Base de Datos. Esto agiliza tu flujo de trabajo diario.
@@ -91,6 +92,10 @@ Apoyar a los usuarios en la búsqueda y formación de círculos: verificar dispo
 #### Desarrollo del curso
 
 Monitorear el avance de los círculos, dar seguimiento a usuarios inactivos, verificar entregas de actividades, y resolver problemas operativos que surjan durante los módulos.
+
+### Priorización de usuarios en riesgo
+
+Dependiendo del periodo del curso, las categorías de usuarios en riesgo cambian de prioridad. Ver la **[guía de priorización](priorizacion.md)** para el detalle completo por periodo (pre-match, match, desarrollo, extensión) y la tabla resumen.
 
 ---
 
@@ -370,6 +375,12 @@ Al remover a un usuario desde la pestaña **People** en Admin Circles, la plataf
 ---
 
 ## 6. Problemas, preguntas y respuestas
+
+### Help Center de Circles
+
+**Link:** https://help.getcircles.org/
+
+Ante cualquier duda sobre cómo hacer algo en la plataforma Circles, lo primero es buscar en el Help Center si existe un artículo que lo explique. El Help Center contiene guías con imágenes explicativas y descripciones paso a paso de la mayoría de los procesos de la plataforma. Si después de buscar no encuentras la respuesta, escala la consulta según el protocolo habitual.
 
 ### 6.1 Principios rectores
 

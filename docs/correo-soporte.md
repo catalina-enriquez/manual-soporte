@@ -59,9 +59,45 @@ Algunos correos pueden quedar sin etiqueta. Esto pasa cuando:
 
 Si encuentras un correo sin etiqueta que debería tener una, puedes etiquetarlo manualmente: clic derecho sobre el correo → "Etiquetar como" → seleccionar la etiqueta correcta.
 
+## Tu firma
+
+Todos los correos se envían desde `soporte@getcircles.org`. La firma predeterminada es **"Asistente de Éxito Estudiantil"**, que incluye el texto "Equipo Soporte Circles" y el logo de Circles.
+
+### Cómo firmar tus correos
+
+Antes de enviar cualquier correo, **escribe tu nombre** arriba de "Equipo Soporte Circles" en la firma. Esto permite identificar quién del equipo envió cada mensaje.
+
+![Ejemplo de firma con nombre del asistente](img/para-SAs-sin-alias.png)
+
+!!! danger "Regla obligatoria"
+    **Siempre agrega tu nombre en la firma antes de enviar.** Si no lo haces, el correo saldrá sin identificar quién lo envió. Esto dificulta el seguimiento del trabajo del equipo.
+
+### Si tienes un alias propio
+
+Algunos miembros del equipo tienen un **alias personal** con dominio @getcircles.org (ej: `camila@getcircles.org`). Si tienes uno:
+
+1. Al redactar o responder un correo, haz clic en el campo **"De"** (arriba del campo "Para")
+2. Selecciona tu alias en el menú desplegable
+3. La firma se actualizará automáticamente con tu nombre
+
+![Seleccionar alias al enviar un correo](img/seleccionar-alias-correo-soporte.png)
+
+!!! note
+    El alias no es una cuenta de correo independiente. No puedes iniciar sesión con él ni recibir correos ahí. Es solo una identidad de envío dentro de la bandeja compartida.
+
+### Tu correo personal de Circles
+
+Cada asistente tiene un **correo personal de Circles** (ej: `tunombre@circles.gmail.com`). Este correo se usa **exclusivamente** para:
+
+- Recibir invitaciones a reuniones y Google Meet
+- Ser copiado (CC) en correos internos de referencia
+- Comunicación interna del equipo
+
+**No** uses tu correo personal de Circles para responder a usuarios ni para enviar correos de soporte.
+
 ## Reglas para enviar correos
 
-- **Siempre** envía desde `soporte@getcircles.org` (nunca desde tu cuenta personal)
+- **Siempre** agrega tu nombre en la firma antes de enviar (o selecciona tu alias si tienes uno)
 - Usa las **plantillas estandarizadas** de la sección [Plantillas](plantillas.md) — personaliza los campos entre corchetes `[ ]` antes de enviar
 - Si necesitas enviar un correo que no tiene plantilla, consulta con el SA Senior o la coordinación antes de enviarlo
 - **Registra un ticket** en el Help Desk por cada interacción significativa con un usuario
