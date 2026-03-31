@@ -5,7 +5,6 @@
 ### En Help Desk
 
 - Contestar los chats escalados a un agente humano en el Help Desk.
-- Monitorear los chats de "AI Support" durante tu turno y reportar respuestas incorrectas del chatbot.
 - Registrar casos complicados en el Sistema de Tickets (ver sección de Help Desk para detalles).
 - Actualizar y resolver tickets conforme se vayan resolviendo los casos.
 
