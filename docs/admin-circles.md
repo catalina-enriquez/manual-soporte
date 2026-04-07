@@ -75,6 +75,41 @@ En algunos casos, un usuario necesita apoyo externo para formar un círculo — 
 
 ![Crear círculo desde Admin](img/create-circle-from-admin.png)
 
+## Asignar a otro círculo
+
+Cuando un usuario necesita ser movido a un círculo diferente — por ejemplo, porque su círculo se disolvió, por incompatibilidad horaria, o por solicitud del usuario — se puede reasignar desde la pestaña Progress.
+
+### Pasos para asignar a otro círculo
+
+1. Dentro del curso en Admin, ir a la pestaña **Progress**.
+2. Hacer clic sobre el ícono de perfil de la persona que se quiere reasignar. Aparecerá un menú con varias opciones.
+3. Seleccionar **"Assign to another Circle"**.
+
+![Menú con la opción Assign to another Circle](img/Admin-assign-to-another-circle.png)
+
+4. Se abrirá un panel lateral mostrando los círculos disponibles, con el nombre del Host, el Circle ID, la cantidad de personas y el porcentaje de compatibilidad horaria.
+5. Seleccionar el círculo de destino y hacer clic en **"Enroll"** para confirmar.
+
+![Selección del círculo de destino](img/Admin-seleccionar-circulo-para-asignar.png)
+
+!!! warning "Importante"
+    Antes de reasignar a un usuario, confirma con él o ella que desea hacer el cambio. No reasignes sin tener la confirmación del usuario.
+
+## Cambiar el anfitrión de un círculo
+
+El anfitrión (Host) de un círculo es quien se encarga de subir las actividades grupales y programar las reuniones. Si el anfitrión actual deja de participar, no responde, o el grupo necesita un cambio, se puede asignar un nuevo anfitrión desde Admin.
+
+### Pasos para cambiar el anfitrión
+
+1. Dentro del curso en Admin, ir a la pestaña **Progress**.
+2. Ubicar el círculo correspondiente y posicionar el mouse sobre la foto de perfil de la persona que se quiere designar como nuevo anfitrión.
+3. Seleccionar la opción **"Make host"** en el menú que aparece.
+
+![Opción Make host en el menú de un miembro del círculo](img/Admin-make-circle-host.png)
+
+!!! warning "Importante"
+    Es muy importante contar con la confirmación del anfitrión actual o de todos los demás integrantes del círculo antes de hacer este cambio. Si el anfitrión no contesta, consulta al resto del grupo. Evita hacer cambios de anfitrión sin tener confirmación de al menos una de estas partes.
+
 ## Subir entregas manualmente
 
 Cuando un círculo o un usuario individual no puede subir una entrega por la vía habitual (problemas técnicos, acceso limitado, etc.), el equipo de soporte puede cargar la entrega de forma manual desde la plataforma Admin.
