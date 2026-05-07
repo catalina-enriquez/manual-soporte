@@ -75,6 +75,37 @@ En algunos casos, un usuario necesita apoyo externo para formar un círculo — 
 
 ![Crear círculo desde Admin](img/create-circle-from-admin.png)
 
+## Agregar a un usuario nuevo a un círculo
+
+Cuando una persona sin círculo necesita ser asignada a uno existente — por ejemplo, porque se incorporó tarde al curso, no logró hacer Match, o fue removida de su círculo anterior — se puede agregar directamente desde la pestaña Progress.
+
+### Pasos para agregar a un usuario a un círculo
+
+1. Dentro del curso en Admin, ir a la pestaña **Progress**.
+2. Seleccionar el botón **"Not in a Circle"** (arriba a la derecha, en azul). Se abrirá un panel con todas las personas que no tienen círculo asignado.
+
+![Botón Not in a Circle en la pestaña Progress](img/Admin-not-in-a-circle.png)
+
+3. Posicionar el mouse sobre la foto de perfil de la persona que quieres agregar a un círculo. Aparecerá un menú con las opciones: **User Profile**, **Assign to a Circle**, **Make Circle Host** y **Send message**.
+
+![Menú con la opción Assign to a Circle](img/Admin-assign-to-a-circle-menu.png)
+
+4. Seleccionar **"Assign to a Circle"**. Se abrirá el panel **"Enroll student"** con la lista de círculos disponibles, mostrando: Host, Circle ID, cantidad de personas y porcentaje de compatibilidad horaria.
+
+![Panel de selección de círculo](img/Admin-enroll-student-seleccionar-circulo.png)
+
+5. Seleccionar el círculo de destino y hacer clic en **"Enroll"** para confirmar.
+
+!!! tip "Si no encuentras el círculo que buscas"
+    La lista de círculos se carga por partes. Si no ves el círculo que necesitas, haz clic en el botón **"Load More"** al final del recuadro para cargar más opciones.
+
+![Botón Load More para cargar más círculos](img/Admin-enroll-student-load-more.png)
+
+!!! warning "Si no aparece la opción 'Assign to a Circle'"
+    Si al hacer clic en el perfil de una persona solo aparece la opción **"User Profile"** (sin "Assign to a Circle", "Make Circle Host" ni "Send message"), significa que esa persona **aún no ha ingresado a la plataforma**. El usuario debe iniciar sesión por primera vez para que el sistema lo reconozca y permita asignarlo a un círculo.
+
+![Perfil de usuario que aún no ha ingresado — solo muestra User Profile](img/Admin-usuario-sin-ingreso-solo-user-profile.png)
+
 ## Asignar a otro círculo
 
 Cuando un usuario necesita ser movido a un círculo diferente — por ejemplo, porque su círculo se disolvió, por incompatibilidad horaria, o por solicitud del usuario — se puede reasignar desde la pestaña Progress.
