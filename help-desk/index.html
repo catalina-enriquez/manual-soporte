@@ -686,22 +686,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#conversaciones-inactivas-despues-de-60-minutos" class="md-nav__link">
+  <a href="#ventana-de-24-horas-y-chats-caducados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conversaciones inactivas (después de 60 minutos)
+        Ventana de 24 horas y chats caducados
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Conversaciones inactivas (después de 60 minutos)">
+    <nav class="md-nav" aria-label="Ventana de 24 horas y chats caducados">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#como-reactivar-una-conversacion-inactiva" class="md-nav__link">
+  <a href="#como-reactivar-una-conversacion-caducada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cómo reactivar una conversación inactiva
+        Cómo reactivar una conversación caducada
       
     </span>
   </a>
@@ -709,10 +709,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#si-el-usuario-no-responde" class="md-nav__link">
+  <a href="#si-el-usuario-no-responde-a-la-plantilla" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Si el usuario no responde
+        Si el usuario no responde a la plantilla
       
     </span>
   </a>
@@ -1279,31 +1279,37 @@
 <li><strong>Sistema de tickets</strong>: verifica si ya existe un ticket previo para ese usuario</li>
 </ul>
 <p>Cuanto más contexto tengas antes de responder, mejor será la atención.</p>
-<h3 id="conversaciones-inactivas-despues-de-60-minutos">Conversaciones inactivas (después de 60 minutos)<a class="headerlink" href="#conversaciones-inactivas-despues-de-60-minutos" title="Permanent link">&para;</a></h3>
-<p>Si no se responde dentro de los 60 minutos, la conversación se desactiva. En este estado ya no puedes escribir mensajes libres — solo puedes enviar una <strong>plantilla predefinida</strong> para reactivar la conversación.</p>
-<h4 id="como-reactivar-una-conversacion-inactiva">Cómo reactivar una conversación inactiva<a class="headerlink" href="#como-reactivar-una-conversacion-inactiva" title="Permanent link">&para;</a></h4>
+<h3 id="ventana-de-24-horas-y-chats-caducados">Ventana de 24 horas y chats caducados<a class="headerlink" href="#ventana-de-24-horas-y-chats-caducados" title="Permanent link">&para;</a></h3>
+<p>La plataforma de chat tiene una <strong>ventana de 24 horas</strong> desde el primer mensaje del usuario. Pasadas esas 24 horas, la conversación se cierra automáticamente y ya no puedes escribir mensajes libres al usuario. Esto aplica aunque la conversación siga en estado "Escalated".</p>
+<div class="admonition danger">
+<p class="admonition-title">Tiempo limitado para resolver</p>
+<p>Si el problema del usuario no se resuelve dentro de las 24 horas, perderás la capacidad de escribirle directamente. Por eso es fundamental responder los chats escalados lo antes posible y no dejarlos para después.</p>
+</div>
+<h4 id="como-reactivar-una-conversacion-caducada">Cómo reactivar una conversación caducada<a class="headerlink" href="#como-reactivar-una-conversacion-caducada" title="Permanent link">&para;</a></h4>
+<p>Cuando una conversación caduca y seguía escalada (sin resolver), la plataforma te da la opción de enviar una <strong>plantilla predefinida</strong> para intentar retomar el contacto con el usuario.</p>
 <ol>
 <li>
-<p>Abre la conversación inactiva. Verás el botón <strong>"Send Template"</strong> en la parte inferior.</p>
-<p><img alt="Botón &quot;Send Template&quot; en una conversación inactiva" src="../img/Helpdesk-enviar-plantilla.png" /></p>
+<p>Abre la conversación caducada. Verás el botón verde <strong>"Send Template"</strong> en la parte inferior de la conversación.</p>
+<p><img alt="Botón &quot;Send Template&quot; en una conversación caducada" src="../img/Helpdesk-enviar-plantilla.png" /></p>
 </li>
 <li>
 <p>Haz clic en <strong>"Send Template"</strong>. Se abrirá un diálogo para seleccionar la plantilla.</p>
 </li>
 <li>
-<p>Selecciona el idioma <strong>"Español"</strong> y luego la plantilla <strong>"Agent Follow-up (Unresolved)"</strong>. Haz clic en <strong>"Send"</strong>.</p>
+<p>Selecciona el idioma <strong>"Español"</strong> y luego elige la plantilla que corresponda al caso. Si el problema no se resolvió, selecciona <strong>"Agent Follow-up (Unresolved)"</strong>. Haz clic en <strong>"Send"</strong>.</p>
 <p><img alt="Seleccionar plantilla &quot;Agent Follow-up&quot; en español" src="../img/Helpdesk-seleccionar-plantilla-espa%C3%B1ol-follow-up.png" /></p>
 </li>
 <li>
-<p>El usuario recibirá un mensaje automático preguntándole si aún necesita ayuda. <strong>Si el usuario responde, la conversación se reactiva</strong> y podrás escribir libremente de nuevo.</p>
+<p>El usuario recibirá un mensaje preguntándole si aún necesita ayuda. <strong>La conversación solo se reactiva si el usuario responde</strong> a este mensaje — hasta entonces, no podrás escribirle.</p>
 </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Estar atento a la reactivación</p>
-<p>Después de enviar la plantilla, mantente atento a la respuesta del usuario. Cuando responda, la conversación volverá a aparecer como activa en la pestaña "Human Support" y debes atenderla.</p>
+<p>Después de enviar la plantilla, mantente atento a la respuesta del usuario. Cuando responda, la conversación volverá a aparecer como activa en la pestaña "Human Support" y debes atenderla como cualquier chat escalado.</p>
 </div>
-<h4 id="si-el-usuario-no-responde">Si el usuario no responde<a class="headerlink" href="#si-el-usuario-no-responde" title="Permanent link">&para;</a></h4>
-<p>Si el usuario no responde a la plantilla de follow-up, puedes cerrar la conversación con el botón <strong>"Resolve"</strong> y un mensaje de cierre como:</p>
+<h4 id="si-el-usuario-no-responde-a-la-plantilla">Si el usuario no responde a la plantilla<a class="headerlink" href="#si-el-usuario-no-responde-a-la-plantilla" title="Permanent link">&para;</a></h4>
+<p>El usuario tiene <strong>24 horas para responder</strong> al mensaje de plantilla. Si no responde dentro de ese plazo, marca la conversación como resuelta con el botón <strong>"Resolve"</strong>.</p>
+<p>Puedes acompañar el cierre con un mensaje como:</p>
 <blockquote>
 <p><em>Dado que no estás activo en el chat daremos la conversación como resuelta, pero si sigues con la duda siempre puedes solicitar hablar con un agente humano en este mismo chat y retomamos la conversación.</em></p>
 </blockquote>
