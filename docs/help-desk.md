@@ -26,6 +26,9 @@ Las consultas rápidas que se resuelven en el momento no requieren ticket.
 
 Usar la sección de notas del ticket para agregar actualizaciones al historial.
 
+!!! warning "Actualizar el estado (Status) del ticket"
+    Cuando te asignan un ticket, **debes actualizar su estado a medida que lo vas gestionando**. Actualizar el Status es la única forma de que el resto del equipo y tus supervisores sepan que la consulta está siendo atendida. Un ticket sin actualización de estado se ve igual que uno abandonado.
+
 ### Antes de contactar a un usuario
 
 Antes de escribirle a un usuario por cualquier canal, revisar si ya existe un ticket a su nombre en el sistema. Leer el historial y las notas para ponerse al día con el caso.
@@ -155,6 +158,20 @@ Cada turno del chat de soporte debe ser registrado como hora trabajada en la **p
 
 Es responsabilidad de cada asistente de soporte el registro completo y fidedigno de todas sus horas trabajadas en la planilla, **al final de cada día laboral**. No se aceptan registros retroactivos de varios días.
 
+#### Qué cuenta como trabajo efectivo
+
+Las horas registradas deben corresponder a **trabajo efectivo**, es decir, tiempo dedicado activamente a:
+
+- Enviar comunicaciones (correos, WhatsApp, mensajes en plataforma)
+- Responder comunicaciones de inscritos
+- Revisar la plataforma Admin (estado de inscritos, progreso, círculos)
+- Arreglar o actualizar datos en el consolidado
+- Gestionar tickets en el sistema de tickets
+
+**Excepción: turnos del chat de soporte.** Los turnos del Help Desk pueden ser "pasivos" — se paga la hora completa aunque no lleguen muchas solicitudes de ayuda, ya que el asistente debe estar disponible y atento durante todo el turno.
+
+Para el resto de las horas, el registro debe ser proporcional al trabajo realizado. Las horas trabajadas deben coincidir con las labores que se necesitan para los inscritos asignados.
+
 !!! info "Monitoreo de actividad en el Help Desk"
     El Help Desk cuenta con una función de seguimiento de actividad que registra cuándo los asistentes inician sesión, cuándo salen y si están activos respondiendo consultas. Esta información se utiliza como referencia complementaria para coordinar la cobertura del chat y verificar que los turnos tomados en Shifton estén siendo cubiertos correctamente.
 
@@ -229,30 +246,37 @@ Antes y durante la atención de un chat, usa todas las herramientas a tu disposi
 
 Cuanto más contexto tengas antes de responder, mejor será la atención.
 
-### Conversaciones inactivas (después de 60 minutos)
+### Ventana de 24 horas y chats caducados
 
-Si no se responde dentro de los 60 minutos, la conversación se desactiva. En este estado ya no puedes escribir mensajes libres — solo puedes enviar una **plantilla predefinida** para reactivar la conversación.
+La plataforma de chat tiene una **ventana de 24 horas** desde el primer mensaje del usuario. Pasadas esas 24 horas, la conversación se cierra automáticamente y ya no puedes escribir mensajes libres al usuario. Esto aplica aunque la conversación siga en estado "Escalated".
 
-#### Cómo reactivar una conversación inactiva
+!!! danger "Tiempo limitado para resolver"
+    Si el problema del usuario no se resuelve dentro de las 24 horas, perderás la capacidad de escribirle directamente. Por eso es fundamental responder los chats escalados lo antes posible y no dejarlos para después.
 
-1. Abre la conversación inactiva. Verás el botón **"Send Template"** en la parte inferior.
+#### Cómo reactivar una conversación caducada
 
-    ![Botón "Send Template" en una conversación inactiva](img/Helpdesk-enviar-plantilla.png)
+Cuando una conversación caduca y seguía escalada (sin resolver), la plataforma te da la opción de enviar una **plantilla predefinida** para intentar retomar el contacto con el usuario.
+
+1. Abre la conversación caducada. Verás el botón verde **"Send Template"** en la parte inferior de la conversación.
+
+    ![Botón "Send Template" en una conversación caducada](img/Helpdesk-enviar-plantilla.png)
 
 2. Haz clic en **"Send Template"**. Se abrirá un diálogo para seleccionar la plantilla.
 
-3. Selecciona el idioma **"Español"** y luego la plantilla **"Agent Follow-up (Unresolved)"**. Haz clic en **"Send"**.
+3. Selecciona el idioma **"Español"** y luego elige la plantilla que corresponda al caso. Si el problema no se resolvió, selecciona **"Agent Follow-up (Unresolved)"**. Haz clic en **"Send"**.
 
     ![Seleccionar plantilla "Agent Follow-up" en español](img/Helpdesk-seleccionar-plantilla-español-follow-up.png)
 
-4. El usuario recibirá un mensaje automático preguntándole si aún necesita ayuda. **Si el usuario responde, la conversación se reactiva** y podrás escribir libremente de nuevo.
+4. El usuario recibirá un mensaje preguntándole si aún necesita ayuda. **La conversación solo se reactiva si el usuario responde** a este mensaje — hasta entonces, no podrás escribirle.
 
 !!! note "Estar atento a la reactivación"
-    Después de enviar la plantilla, mantente atento a la respuesta del usuario. Cuando responda, la conversación volverá a aparecer como activa en la pestaña "Human Support" y debes atenderla.
+    Después de enviar la plantilla, mantente atento a la respuesta del usuario. Cuando responda, la conversación volverá a aparecer como activa en la pestaña "Human Support" y debes atenderla como cualquier chat escalado.
 
-#### Si el usuario no responde
+#### Si el usuario no responde a la plantilla
 
-Si el usuario no responde a la plantilla de follow-up, puedes cerrar la conversación con el botón **"Resolve"** y un mensaje de cierre como:
+El usuario tiene **24 horas para responder** al mensaje de plantilla. Si no responde dentro de ese plazo, marca la conversación como resuelta con el botón **"Resolve"**.
+
+Puedes acompañar el cierre con un mensaje como:
 
 > *Dado que no estás activo en el chat daremos la conversación como resuelta, pero si sigues con la duda siempre puedes solicitar hablar con un agente humano en este mismo chat y retomamos la conversación.*
 

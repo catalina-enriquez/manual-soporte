@@ -44,6 +44,14 @@ El objetivo es que todos los usuarios ingresen a la plataforma y completen su pe
 
 El mayor énfasis está en que los usuarios que aún no han ingresado lo hagan, y que quienes ya están en la plataforma encuentren un círculo.
 
+**Qué hacer con cada categoría (en este orden):**
+
+1. **No ha ingresado (Prospects):** Enviar correo y WhatsApp invitándolos a ingresar a la plataforma.
+2. **Sin disponibilidad / Sin círculo (New Users):** Contactar por plataforma admin, correo o WhatsApp para: (a) consultar si necesitan ayuda o tienen dudas, (b) verificar que hayan ingresado su disponibilidad horaria, y (c) preguntar si postularon a círculos.
+3. **Revisar compatibilidad horaria de círculos creados:** Si se detecta incompatibilidad horaria entre miembros de un círculo, escribir al anfitrión/a para verificar si es intencional (pueden ser colegas que se conocen y ya se pusieron de acuerdo). Si no es intencional, gestionar que la persona incompatible encuentre otro grupo o amplíe su disponibilidad horaria.
+
+Si un inscrito no responde a los intentos por plataforma, correo y WhatsApp, escalar a **llamada telefónica**.
+
 ---
 
 ### 3. Final de Match

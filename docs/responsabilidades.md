@@ -16,6 +16,43 @@
 
 - Responder consultas de usuarios por correo según las plantillas estandarizadas.
 
+## Seguimiento proactivo
+
+El seguimiento proactivo es una de las responsabilidades centrales del asistente de soporte. A diferencia de los turnos del Help Desk (donde se responde lo que llega), el seguimiento proactivo consiste en **contactar activamente a los inscritos asignados** para que avancen en el curso, formen grupo y no abandonen.
+
+### Dos tipos de trabajo
+
+El trabajo del asistente se divide en dos áreas con lógicas distintas:
+
+| | Seguimiento proactivo | Turnos de Help Desk |
+|---|---|---|
+| **Qué es** | Contactar activamente a tus inscritos asignados | Responder consultas que llegan al chat y correo |
+| **A quién atiendes** | Solo a tus inscritos asignados | A cualquier usuario, de cualquier convocatoria |
+| **Cuándo** | En tus horarios asignados para trabajar con Circles | Durante tu turno en el chat de soporte |
+
+Ambos tipos de trabajo se registran como horas trabajadas en la planilla.
+
+### Inscritos asignados
+
+Cada asistente tiene un grupo de inscritos asignados para seguimiento proactivo. La asignación está disponible 24/7 en el **consolidado de cada convocatoria**. Cuando la asignación cambie (por ejemplo, porque se formaron nuevos círculos), se avisará por el grupo de WhatsApp del equipo. Se intenta mantener el mismo grupo de inscritos por asistente para no generar confusión.
+
+### Canales de contacto
+
+Para contactar a los inscritos, utiliza los canales en este orden de preferencia:
+
+1. **Plataforma Admin** (mensajes directos)
+2. **Correo electrónico**
+3. **WhatsApp**
+4. **Llamada telefónica** — si el inscrito no responde a los intentos anteriores
+
+### Horarios de contacto
+
+Realiza el seguimiento durante tus horarios asignados para trabajar con Circles. Evita escribir a los inscritos muy tarde para no generar molestias.
+
+### Si no te dan las horas
+
+Si ves que tu disponibilidad no alcanza para cubrir todo el seguimiento que tienes asignado, **comunícalo de inmediato a tu SA Senior** para redistribuir la carga o recibir apoyo. No dejes a tus inscritos asignados sin atención.
+
 ## Responsabilidades por etapa del curso
 
 ### Primeros pasos
